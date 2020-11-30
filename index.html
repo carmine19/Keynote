@@ -278,6 +278,47 @@
                     </div>
                 </section>
                 <!-- fine location -->
+                <!-- news -->
+                <section id="news">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="box-top">
+                                    <div class="box-title">
+                                        <h2>recent news</h2>
+                                    </div>
+                                    <div class="box-link">
+                                        <a href="">read all news</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" v-for="ele in news">
+                                <div class="box-card">
+                                    <div class="box-img">
+                                        <img :src=" 'img/' + ele.img + '.jpg' " alt="">
+                                        <div class="stiky">
+                                            <p>Sticky Post</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-text">
+                                        <div class="data">
+                                            <p>{{ele.data}}</p>
+                                        </div>
+                                        <div class="title">
+                                            <h4>{{ele.title}}</h4>
+                                        </div>
+                                        <div class="body">
+                                            <p>{{ele.text}}</p>
+                                        </div>
+                                        <div class="link">
+                                            <a href="">{{ele.link}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </main>
             <!-- fine app -->

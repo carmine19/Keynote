@@ -713,3 +713,98 @@ main #location .box-bottom .box-link a:last-child:before{
     font-size: 12px;
 }
 /* fine locatione */
+/* news */
+
+main #news {
+    padding: 50px;
+}
+
+main #news .col-lg-12 .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+main #news .col-lg-12 .box-top .box-title h2{
+    font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 4px;
+}
+
+main #news .col-lg-12 .box-top .box-link a{
+    color: #f62b0a;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 14px;
+}
+
+main #news .col-lg-4 .box-card .box-img {
+    position: relative;
+}
+
+main #news .col-lg-4 .box-card .box-img img{
+    width: 100%;
+}
+
+main #news .col-lg-4 .box-card .box-img .stiky{
+    background: #040404;
+    color: #ffffff;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main #news .col-lg-4 .box-card .box-img .stiky p{
+    margin: 0 auto;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main #news .col-lg-4 .box-card .box-img .stiky p:before{
+    content: '\f0a1';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+main #news .col-lg-4 .box-card .box-img:last-of-type{
+    display: none;
+}
+
+main #news .col-lg-4 .box-card .box-text .data {
+    margin-top: 20px;
+}
+
+main #news .col-lg-4 .box-card .box-text .data p{
+    margin: 0 auto;
+    color: #c6c1bd;
+    font-size: 14px;
+    font-style: italic;
+}
+
+main #news .col-lg-4 .box-card .box-text .title h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+main #news .col-lg-4 .box-card .box-text .body p{
+    font-size: 12px;
+    color: #c6c1bd;
+    margin: 20px auto;
+}
+
+main #news .col-lg-4 .box-card .box-text .link a{
+    font-size: 12px;
+    color: #f62b0a;
+    text-transform: capitalize;
+    font-style: italic;
+}

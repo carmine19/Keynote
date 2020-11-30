@@ -67,6 +67,29 @@ var app = new Vue ({
                 day:'Day 5',
                 date:'26 may 2050'
             }
+        ],
+        news:[
+            {
+                data: '03 Dec 2013 / 0 Comments',
+                title: 'Sedial eiusmod tempor',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere.... ',
+                link:'Read More',
+                img:'photodune-7770665-two-white-coffee-mug-with-diy-decoration-o'
+            },
+            {
+                data: '03 Dec 2013 / 2 Comments',
+                title: 'Donec luctus imperdiet',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere.... ',
+                link:'Read More',
+                img:'photodune-8797753-multiethnic-people-with-startup-business-t'
+            },
+            {
+                data: '03 Dec 2013 / 2 Comments',
+                title: 'Magna pars studiorum',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere.... ',
+                link:'Read More',
+                img:'photodune-8522811-speaker-at-business-conference-and-present'
+            }
         ]
     },
     methods: {
