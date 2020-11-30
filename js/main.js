@@ -1,3 +1,4 @@
+
 var app = new Vue ({
     el: '#app',
     data: {
@@ -43,6 +44,28 @@ var app = new Vue ({
                 img:'speaker-5',
                 title:'Janet Jones',
                 text:'Newyork Post\'s GM',
+            }
+        ],
+        programs:[
+            {
+                day:'Day 1',
+                date:'23 may 2016'
+            },
+            {
+                day:'Day 2',
+                date:'23 may 2020'
+            },
+            {
+                day:'Day 3',
+                date:'24 may 2030'
+            },
+            {
+                day:'Day 4',
+                date:'25 may 2040'
+            },
+            {
+                day:'Day 5',
+                date:'26 may 2050'
             }
         ]
     },

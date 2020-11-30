@@ -369,6 +369,7 @@ main #speakers {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f3f3f3;
 }
 
 main #speakers .col-lg-12 .box-top {
@@ -469,6 +470,136 @@ main #speakers .col-lg-3 .box-bottom .box-text p{
     font-style: italic;
     letter-spacing: 1px;
 }
+/* fine speaker */
+/* program */
+
+main #program {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #program .col-lg-12 .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+main #program .col-lg-12 .box-top .box-left{
+    display: flex;
+    align-items: center;
+}
+
+main #program .col-lg-12 .box-top .box-left h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main #program .col-lg-12 .box-top .box-left p{
+    margin: 0 0 0 60px;
+    font-size: 14px;
+    color: #c6c1bd;
+}
+
+main #program .col-lg-12 .box-top .box-right a{
+    text-decoration: none;
+    color: #f62b0a;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu {
+    display: flex;
+    align-items: center;
+    background: #f62b0a;
+    color: #ffffff;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu .box-text:first-child {
+    background: #bf351f;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu .box-text{
+    padding: 12px 20px;
+    border-right: 1px solid grey;
+    width: 190px;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu .box-text p{
+    margin: 0 auto;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu .box-text p:first-child{
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main #program .col-lg-12 .box-bottom .box-menu .box-text p:last-child{
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom {
+    padding: 50px;
+    color: #c6c1bd;
+    background: #F7F7F7;
+    display: flex;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .col-lg-3 i{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .col-lg-3 span{
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .col-lg-3 .box-text-bottom span{
+    color: #f62b0a;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .box-text-center{
+    margin: 20px auto;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .box-img img{
+    width: 45px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .box-text-main .box-title h3{
+    color: #515151;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+main #program .col-lg-12 .box-bottom .box-bottom-bottom .box-text-main .box-text p{
+    color: #c6c1bd;
+    font-size: 14px;
+}
+/* fine program */
+
+/* maps */
+/* fine maps */
+
+
+
+
 
 
 
