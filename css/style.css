@@ -17,6 +17,10 @@ ul,li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -105,6 +109,9 @@ main #hero {
     background-size: cover;
     min-height: 500px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main #hero .container {
@@ -112,7 +119,6 @@ main #hero .container {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 500px;
 }
 
 main #hero .container .box-hero .box-title p{
@@ -176,7 +182,7 @@ main #question .container .main-box .box-icon {
 }
 
 main #question .container .main-box .box-icon i{
-    font-size: 20px;
+    font-size: 25px;
     color: #c6c1bd;
 }
 
@@ -186,6 +192,7 @@ main #question .container .main-box .box-right {
 
 main #question .container .main-box .box-right .box-title h2 {
     margin-bottom: 20px;
+    padding-top: 5px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -198,7 +205,269 @@ main #question .container .main-box .box-right .box-text p {
     font-weight: 500;
     color: #c6c1bd;
     letter-spacing: 1px;
+}
 
+main #question .container .main-box .box-right .box-link a {
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #bf351f;
+    text-decoration: none;
+}
+/* fine question*/
+
+/* counter */
+
+main #counter {
+    background: url("../img/coutdown-bg1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main #counter .container .box-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #counter .container .box-counter .box-hours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #counter .container .box-counter .box-hours .day {
+    margin: 0 20px;
+    padding: 25px;
+    background: #040404;
+    opacity: 0.80;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main #counter .container .box-counter .box-hours .hours, .minutes, .seconds{
+    margin: 0 20px;
+    padding: 25px;
+    background: #040404;
+    opacity: 0.70;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main #counter .container .box-counter .box-hours .day p{
+    margin: 0 auto;
+}
+
+main #counter .container .box-counter .box-hours .day p:first-child{
+    font-size: 51px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+main #counter .container .box-counter .box-hours .day p:last-child{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+main #counter .container .box-counter .box-hours .hours p{
+    margin: 0 auto;
+}
+
+main #counter .container .box-counter .box-hours .hours p:first-child{
+    font-size: 51px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+main #counter .container .box-counter .box-hours .hours p:last-child{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+main #counter .container .box-counter .box-hours .minutes p{
+    margin: 0 auto;
+}
+
+main #counter .container .box-counter .box-hours .minutes p:first-child{
+    font-size: 51px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+main #counter .container .box-counter .box-hours .minutes p:last-child{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+main #counter .container .box-counter .box-hours .seconds p{
+    margin: 0 auto;
+}
+
+main #counter .container .box-counter .box-hours .seconds p:first-child{
+    font-size: 51px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+main #counter .container .box-counter .box-hours .seconds p:last-child{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+main #counter .container .box-counter .box-title h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 45px auto;
+    letter-spacing: 4px;
+    color: #040404;
+    opacity: 0.70;
+}
+
+main #counter .container .box-counter .box-input .current-input {
+    padding: 18px 2%;
+    width: 360px;
+    margin-right: 10px;
+    font-size: 13px;
+    max-width: 96%;
+}
+
+main #counter .container .box-counter .box-input .btn-red {
+    padding: 15px 30px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main #counter .container .box-counter .box-input .btn-red:hover {
+    color: #ffffff;
+}
+/* fine counter */
+/* speakers */
+
+main #speakers {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #speakers .col-lg-12 .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #speakers .col-lg-12 .box-top .box-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 4px;
+    color: #040404;
+}
+
+main #speakers .col-lg-12 .box-top {
+    margin-bottom: 50px;
+}
+
+main #speakers .col-lg-12 .box-top .box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #speakers .col-lg-12 .box-top .box-icon i{
+    padding: 10px 15px;
+    background: red;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+main #speakers .col-lg-12 .box-top .box-icon i:first-child{
+    margin-left: 10px;
+}
+
+main #speakers .col-lg-12 .box-top .box-icon i:first-child{
+    margin-left: 10px;
+}
+
+main #speakers .col-lg-3 .box-bottom {
+    text-align: center;
+    display: block;
+}
+
+main #speakers .col-lg-3 .box-bottom .box-img {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+main #speakers .col-lg-3 .box-bottom .box-img img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+main #speakers .col-lg-3 .box-bottom .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f62b0a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+main #speakers .col-lg-3 .box-bottom .box-img:hover .icon{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+main #speakers .col-lg-3 .box-bottom .icon i{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main #speakers .col-lg-3 .box-bottom .box-title h3 {
+    color: #403d3b;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main #speakers .col-lg-3 .box-bottom .box-text p{
+    color: #403d3b;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1px;
 }
 
 
