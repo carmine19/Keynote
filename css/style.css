@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.active {
+    color: #f62b0a;
+}
+
+.btn-red {
+    padding: 19px 30px 21px;
+    font-size: 14px;
+    color: #fff;
+    background: #f72b0c;
+}
+
+/* header */
+header .container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 45px 80px;
+}
+
+header .container-menu .menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-menu .menu-right .box-link {
+    border-right: 2px solid #868686;
+}
+
+header .container-menu .menu-right .box-icon {
+    margin-left: 30px;
+}
+
+header .container-menu .menu-right .box-link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header .container-menu .menu-right .box-link ul li a{
+    margin-left: 15px;
+    color: #868686;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header .container-menu .menu-right .box-link ul li a:last-child{
+    padding-right: 20px;
+}
+
+header .container-menu .menu-right .box-link ul li:last-child{
+    padding-right: 20px;
+}
+
+header .container-menu .menu-right .box-link ul li a:hover{
+    text-decoration: none;
+    color: #f62b0a;
+}
+
+header .container-menu .menu-right .box-icon i{
+    cursor: pointer;
+}
+/* fine header */
+
+/* main */
+/* Hero section */
+
+main #hero {
+    background: url("../img/slider-1-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    color: #fff;
+}
+
+main #hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+}
+
+main #hero .container .box-hero .box-title p{
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main #hero .container .box-hero .box-title h1{
+    font-size: 85px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+main #hero .container .box-hero .box-text {
+    display: flex;
+    justify-content: center;
+}
+
+main #hero .container .box-hero .box-text p:nth-child(3){
+    margin: 0 30px;
+}
+
+main #hero .container .box-hero .box-text p:first-child{
+    margin-right: 30px;
+}
+
+main #hero .container .box-hero .box-text p:last-child{
+    margin-left: 30px;
+}
+
+main #hero .container .box-hero .box-text p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+main #hero .container .box-hero .box-btn {
+    margin-top: 20px;
+}
+
+main #hero .container .box-hero .box-btn .btn{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* fine hero */
+/* questions */
+
+main #question .container {
+    padding:60px;
+}
+
+main #question .container .main-box {
+    position: relative;
+}
+
+main #question .container .main-box .box-icon {
+    position: absolute;
+}
+
+main #question .container .main-box .box-icon i{
+    font-size: 20px;
+    color: #c6c1bd;
+}
+
+main #question .container .main-box .box-right {
+    margin-left: 50px;
+}
+
+main #question .container .main-box .box-right .box-title h2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main #question .container .main-box .box-right .box-text p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #c6c1bd;
+    letter-spacing: 1px;
+
+}
+
+
+
