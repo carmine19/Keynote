@@ -926,3 +926,124 @@ main #tickets .col-lg-4 .box-card .footer a:hover {
     color: #ffffff;
     text-decoration: none;
 }
+/* fine tickets */
+/* presentation e twitter */
+
+main #presentation {
+	padding: 80px;
+}
+
+main #presentation .box-presentation .box-title h2 {
+	font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+main #presentation .box-presentation .box-video {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+main #presentation .box-presentation .box-video .box-play {
+	position: absolute;
+    left: 20px;
+    top: 80%;
+}
+
+main #presentation .box-presentation .box-video .box-play i {
+	color: white;
+    background: black;
+    padding: 13px 28px;
+    border-radius: 5px;
+    opacity: 0.80;
+	cursor: pointer;
+}
+
+main #presentation .box-presentation .box-video .bgvid {
+	width: 80%;
+}
+
+main #presentation .box-twetter .box-title h2 {
+	font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+main #presentation .box-twetter .twetter-card {
+	position: relative;
+}
+
+main #presentation .box-twetter .box-text {
+	margin-left: 40px;
+}
+
+main #presentation .box-twetter .box-text p {
+	font-size: 14px;
+    color: #c6c1bd;
+}
+
+main #presentation .box-twetter .box-text a {
+	color: #f62b0a;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+main #presentation .box-twetter .box-icon {
+	position: absolute;
+	top: 5px;
+}
+
+main #presentation .box-twetter .box-icon i {
+	color: #47BDEE;
+	font-size: 20px;
+}
+
+main #presentation .box-twetter .box-date {
+	margin-left: 40px;
+}
+
+main #presentation .box-twetter .box-date p {
+    font-size: 12px;
+    font-style: italic;
+	color: #b1b1b1;
+}
+/* fine presentation e twitter */
+
+main #sponsor {
+	padding-top: 80px;
+	padding-bottom: 70px;
+	background: #F6F6F6;
+}
+
+main #sponsor .box-text {
+	text-align: center;
+}
+
+main #sponsor h2 {
+	font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+main #sponsor p {
+	font-size: 14px;
+    color: #c6c1bd;
+	margin-bottom: 50px;
+}
+
+main #sponsor .box-img-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main #sponsor .box-img-main img{
+	width: 100%;
+}

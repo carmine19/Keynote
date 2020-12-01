@@ -2,7 +2,7 @@
 var app = new Vue ({
     el: '#app',
     data: {
-        indice_corrente: 0,
+        feautured:'Feautured',
         menus:['home','pages','program','tickets','speakers','papers','blog','shortcodes'],
         questions:[
             {
@@ -95,28 +95,46 @@ var app = new Vue ({
             {
                 title:'One Day Pass',
                 subtitle: 'free',
-                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50 USD Voucher For Next Event'],
                 link:'book now',
             },
             {
-                title:'One Day Pass',
-                subtitle: 'free',
-                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                title:'Four Day Passes',
+                subtitle: '750.00 USD',
+                text:['Four Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','100 USD Voucher For Next Event'],
                 link:'book now',
             },
             {
-                title:'One Day Pass',
-                subtitle: 'free',
-                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                title:'Two Day Passes',
+                subtitle: '580.00 USD',
+                text:['Two Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','70 USD Voucher For Next Event'],
                 link:'book now',
             }
-        ]
+        ],
+        sponsor:['banner-1','banner-2','banner-3','banner-4','banner-5','banner-6']
     },
     methods: {
+        isMobile(){
+            if(screen.width <= 766) {
+				return true;
+			}else {
+				return false;
+			}
+        },
 
+        autoplay() {
+			var vid = document.getElementById("myVideo");
+			if (vid.autoplay === true) {
+				vid.autoplay = false
+				vid.load();
+			} else if (vid.autoplay === false) {
+				vid.autoplay = true
+				vid.load();
+			}
+		},
     },
     mounted() {
-
+        this.isMobile()
 
     }
 

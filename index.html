@@ -335,13 +335,13 @@
                                         <h4>{{ele.title}}</h4>
                                         <p>{{ele.subtitle}}</p>
                                         <div class="feautured" v-if="index > 0 && index < 2">
-                                            <p>Feautured</p>
+                                            <p>{{feautured}}</p>
                                         </div>
                                     </div>
                                     <div class="body">
                                         <div class="menu">
                                             <ul>
-                                                <li v-for="ele in tickets[indice_corrente].text">{{ele}}</li>
+                                                <li v-for="(ele, index) in tickets[index].text">{{ele}}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -349,6 +349,95 @@
                                         <div class="box-link">
                                             <a href="">{{ele.link}}</a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fine tickets -->
+                <!-- presentation -->
+                <section id="presentation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="box-presentation">
+                                    <div class="box-title">
+                                        <h2>presentation</h2>
+                                    </div>
+                                    <div class="box-video">
+                                        <video loop muted  id="myVideo" class="bgvid" v-if="!isMobile()">
+                                            <source src="video/DaL.mp4" type="video/mp4"/>
+                                        </video>
+                                        <div class="box-play">
+                                            <i class="fas fa-play" @click="autoplay"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="box-twetter">
+                                    <div class="box-title">
+                                        <h2>twitter feed</h2>
+                                    </div>
+                                    <div class="box-text-main">
+                                        <div class="twetter-card">
+                                            <div class="box-icon">
+                                                <i class="fab fa-twitter"></i>
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Stand out and be vibrant with some of the best bright and bold templates on
+                                                    <a href="">@Envato</a> Elements. And add a splash of c… <a
+                                                            href="">https://t.co/jFrsnzEJK7</a></p>
+                                            </div>
+                                            <div class="box-date">
+                                                <p>3 days ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="twetter-card">
+                                            <div class="box-icon">
+                                                <i class="fab fa-twitter"></i>
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Do you need to deliver the perfect presentation or creative pitch? Sure, your ideas and plan need to be on-point, b…
+                                                    <a href="">https://t.co/jFrsnzEJK7</a></p>
+                                            </div>
+                                            <div class="box-date">
+                                                <p>3 days ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="twetter-card">
+                                            <div class="box-icon">
+                                                <i class="fab fa-twitter"></i>
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Cut yourself a piece of the BFCM sales pie with a solid marketing plan. Here are 5 ways to optimize your content fo…
+                                                    <a href="">https://t.co/UZfKHshE0T</a></p>
+                                            </div>
+                                            <div class="box-date">
+                                                <p>3 days ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fine presentation e twitter -->
+                <!-- sponsor -->
+                <section id="sponsor">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="box-text">
+                                    <h2>Sponsors</h2>
+                                    <p>Maecenas faucibus mollis interdum. Nullam id dolor <br>
+                                        id nibh ultricies vehicula ut id elit.</p>
+                                </div>
+                                <div class="box-img-main">
+                                    <div class="box-img" v-for="ele in sponsor">
+                                        <img :src=" 'img/' + ele + '.jpg' " alt="">
                                     </div>
                                 </div>
                             </div>
