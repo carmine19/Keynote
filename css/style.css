@@ -1013,6 +1013,7 @@ main #presentation .box-twetter .box-date p {
 	color: #b1b1b1;
 }
 /* fine presentation e twitter */
+/* sponsor */
 
 main #sponsor {
 	padding-top: 80px;
@@ -1047,3 +1048,108 @@ main #sponsor .box-img-main {
 main #sponsor .box-img-main img{
 	width: 100%;
 }
+/* fine sponsor */
+/************ fine main */
+
+/* footer */
+
+footer {
+	background: #272727;
+	color: white;
+}
+
+footer .container:first-child {
+	padding: 50px 0;
+	font-size: 14px;
+	color: #c6c1bd;
+	font-weight: 400;
+}
+
+footer .container:first-child .box-title h4 {
+	font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+	color: #ddd;
+}
+
+footer .container:first-child .box-text p {
+	color: #bfbfbf;
+	font-weight: 300;
+	margin-bottom: 25px;
+	line-height: 25px;
+}
+
+footer .container:first-child .box-icon i {
+	color: #fff;
+	font-size: 19px;
+	margin-right: 10px;
+}
+
+footer .container:first-child .col-lg-3:nth-child(2) .box-text p {
+	color: #bfbfbf;
+	font-weight: 200;
+	margin-bottom: 20px;
+	line-height: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+footer .container:first-child .col-lg-3:nth-child(2) .box-text p:before {
+	content: '>';
+	margin-right: 15px;
+}
+
+footer .container:first-child .col-lg-3:nth-child(3) .box-btn .btn {
+	padding: 10px 30px 10px;
+}
+
+footer .container:first-child .col-lg-3:last-child .box-img img{
+	width: 50px;
+	margin: 3px 3px;
+}
+
+footer .container-fluid {
+	width: 100%;
+	background: #161616;
+	color: #c6c1bd;
+	font-weight: 300;
+	font-size: 14px;
+	padding: 30px 0;
+}
+
+footer .container-fluid .box-bottom {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer .container-fluid .box-bottom p, ul{
+	margin: 0 auto;
+	opacity: 0.70;
+}
+
+footer .container-fluid .box-bottom ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .container-fluid .box-bottom ul li a{
+	margin-right: 10px;
+	color: #c6c1bd;
+	font-weight: 300;
+	font-size: 14px;
+	transition: 0.5s;
+}
+
+footer .container-fluid .box-bottom ul li a:hover {
+	color: white;
+	font-weight: 500;
+	transition: 0.5s;
+	text-decoration: none;
+}
+

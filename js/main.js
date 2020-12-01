@@ -111,7 +111,50 @@ var app = new Vue ({
                 link:'book now',
             }
         ],
-        sponsor:['banner-1','banner-2','banner-3','banner-4','banner-5','banner-6']
+        sponsor:['banner-1','banner-2','banner-3','banner-4','banner-5','banner-6'],
+        footer:[
+            {
+                title:'abouts',
+                text:'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+                icon:['fab fa-facebook-f','fab fa-twitter','fab fa-google','fab fa-flickr','fab fa-instagram','fab fa-linkedin','fab fa-pinterest-square']
+            },
+            {
+                title:'Recent news',
+                text:['Sem Porta Mollis Parturient','Nullam Lorem Mattis Purus','Nibh Sem Sit Ullamcorper','Donec luctus imperdiet','Magna pars studiorum'],
+            },
+            {
+                title:'Get Your Seat!',
+                text:"Book for your seat before it's too rate. We provide variety of ticket options.",
+                button:'Check Out Tickets!'
+            },
+            {
+                title:'Gallery From Last Year',
+                image:[
+                    'photodune-6745579-modern-creative-man-relaxing-on-workspace-',
+                    'photodune-6745585-modern-creative-workspace-m-150x150',
+                    'photodune-6745606-man-wristwatch-calendar-key-and-glasses-on',
+                    'photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (1)',
+                    'photodune-8522811-speaker-at-business-conference-and-present (1)',
+                    'photodune-8523683-speaker-at-business-convention-and-present',
+                    'photodune-8795110-overhead-of-essentials-denim-clothes-m-150',
+                    'photodune-8797753-multiethnic-people-with-startup-business-t (1)',
+                    'speaker-1-150x150',
+                    'speaker-5-150x150',
+                    'speaker-3-150x150',
+                    'speaker-2-150x150',
+                ]
+            },
+            {
+                text:"© Copyright GoodLayers, All Right Reserved",
+                link:[
+                    'About Us',
+                    'Accommodation',
+                    'Call For Paper',
+                    'Contact Us'
+                ]
+            }
+        ]
+
     },
     methods: {
         isMobile(){

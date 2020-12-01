@@ -444,8 +444,81 @@
                         </div>
                     </div>
                 </section>
-
+                <!-- fine sponsor -->
             </main>
+            <!-- fine main -->
+
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                            <div class="col-lg-3">
+                                <div class="main-box">
+                                    <div class="box-title">
+                                        <h4>{{footer[0].title}}</h4>
+                                    </div>
+                                    <div class="box-text">
+                                        <p>{{footer[0].text}}</p>
+                                    </div>
+                                    <div class="box-icon">
+                                        <i v-for="icon in footer[0].icon" :class="icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="main-box">
+                                    <div class="box-title">
+                                        <h4>{{footer[1].title}}</h4>
+                                    </div>
+                                    <div class="box-text">
+                                        <p v-for="ele in footer[1].text">{{ele}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="main-box">
+                                    <div class="box-title">
+                                        <h4>{{footer[2].title}}</h4>
+                                    </div>
+                                    <div class="box-text">
+                                        <p>{{footer[2].text}}</p>
+                                    </div>
+                                    <div class="box-btn">
+                                        <div class="btn btn-red">{{footer[2].button}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="main-box">
+                                    <div class="box-title">
+                                        <h4>{{footer[3].title}}</h4>
+                                    </div>
+                                    <div class="box-img">
+                                        <img v-for="ele in footer[3].image" :src=" 'img/' + ele + '.jpg' " alt="">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box-bottom">
+                                <div class="box-left">
+                                <p>{{footer[4].text}}</p>
+                            </div>
+                                <div class="box-right">
+                                    <ul>
+                                        <li v-for="ele in footer[4].link"><a href="">{{ele}}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
             <!-- fine app -->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
