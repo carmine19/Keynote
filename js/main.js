@@ -2,7 +2,7 @@
 var app = new Vue ({
     el: '#app',
     data: {
-
+        indice_corrente: 0,
         menus:['home','pages','program','tickets','speakers','papers','blog','shortcodes'],
         questions:[
             {
@@ -89,6 +89,26 @@ var app = new Vue ({
                 text: 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere.... ',
                 link:'Read More',
                 img:'photodune-8522811-speaker-at-business-conference-and-present'
+            }
+        ],
+        tickets: [
+            {
+                title:'One Day Pass',
+                subtitle: 'free',
+                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                link:'book now',
+            },
+            {
+                title:'One Day Pass',
+                subtitle: 'free',
+                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                link:'book now',
+            },
+            {
+                title:'One Day Pass',
+                subtitle: 'free',
+                text:['One Day Access','Coffee Break','Lunch(International Buffet)','Document Sheets','50USD Voucher For Next Event'],
+                link:'book now',
             }
         ]
     },

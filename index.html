@@ -292,11 +292,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4" v-for="ele in news">
+                            <div class="col-lg-4" v-for="(ele, index ) in news">
                                 <div class="box-card">
                                     <div class="box-img">
                                         <img :src=" 'img/' + ele.img + '.jpg' " alt="">
-                                        <div class="stiky">
+                                        <div class="stiky" v-if="index < 1">
                                             <p>Sticky Post</p>
                                         </div>
                                     </div>
@@ -311,6 +311,42 @@
                                             <p>{{ele.text}}</p>
                                         </div>
                                         <div class="link">
+                                            <a href="">{{ele.link}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fine news -->
+                <!-- tickets -->
+                <section id="tickets">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="box-title">
+                                    <h2>tickets</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" v-for="(ele, index) in tickets">
+                                <div class="box-card">
+                                    <div class="header">
+                                        <h4>{{ele.title}}</h4>
+                                        <p>{{ele.subtitle}}</p>
+                                        <div class="feautured" v-if="index > 0 && index < 2">
+                                            <p>Feautured</p>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="menu">
+                                            <ul>
+                                                <li v-for="ele in tickets[indice_corrente].text">{{ele}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="box-link">
                                             <a href="">{{ele.link}}</a>
                                         </div>
                                     </div>

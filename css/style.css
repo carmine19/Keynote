@@ -20,6 +20,7 @@ li {
 
 a {
 	text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -115,7 +116,7 @@ main #hero {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 500px;
+	padding: 100px;
 	color: #fff;
 	display: flex;
 	justify-content: center;
@@ -773,10 +774,6 @@ main #news .col-lg-4 .box-card .box-img .stiky p:before{
     font-size: 12px;
 }
 
-main #news .col-lg-4 .box-card .box-img:last-of-type{
-    display: none;
-}
-
 main #news .col-lg-4 .box-card .box-text .data {
     margin-top: 20px;
 }
@@ -807,4 +804,125 @@ main #news .col-lg-4 .box-card .box-text .link a{
     color: #f62b0a;
     text-transform: capitalize;
     font-style: italic;
+    cursor: pointer;
+}
+/* fine news */
+/* tickets */
+
+main #tickets {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: url("../img/ticket-bg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: white;
+}
+
+main #tickets .col-lg-12 .box-title {
+    margin-bottom: 60px;
+}
+
+main #tickets .col-lg-12 .box-title h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-align: center;
+}
+
+main #tickets .col-lg-4 .box-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+main #tickets .col-lg-4 .box-card .header {
+    padding: 25px;
+    background: #e9e9e9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main #tickets .col-lg-4 .box-card .header .feautured {
+    padding: 5px;
+    background: #f62b0a;
+    position: absolute;
+    top: 71px;
+    right: -20px;
+    text-align: center;
+    width: 130px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+}
+
+main #tickets .col-lg-4 .box-card .header .feautured p {
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+main #tickets .col-lg-4 .box-card .header h4 {
+    color: #272727;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+main #tickets .col-lg-4 .box-card .header p {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #f62b0a;
+}
+
+main #tickets .col-lg-4 .box-card .body {
+    padding: 25px;
+    background: #f9f9f9;
+    width: 100%;
+}
+
+main #tickets .col-lg-4 .box-card .body ul li {
+    margin-bottom: 13px;
+    font-size: 15px;
+    font-style: italic;
+    color: #8b8b8b;
+}
+
+main #tickets .col-lg-4 .box-card .body ul li:first-child {
+    margin-top: 13px;
+}
+
+main #tickets .col-lg-4 .box-card .footer {
+    padding: 15px;
+    background: #f62b0a;
+    width: 100%;
+}
+
+main #tickets .col-lg-4 .box-card .footer a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+main #tickets .col-lg-4 .box-card .footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
