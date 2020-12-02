@@ -179,17 +179,5 @@ var app = new Vue ({
     },
     mounted() {
         this.isMobile()
-
     }
-
-
-
-
-
-
-
-
-
-
-
 });
