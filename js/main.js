@@ -4,6 +4,7 @@ var app = new Vue ({
     data: {
         feautured:'Feautured',
         menus:['home','pages','program','tickets','speakers','papers','blog','shortcodes'],
+        logo: 'logo',
         questions:[
             {
                 title:'Who we are',
@@ -158,7 +159,7 @@ var app = new Vue ({
     },
     methods: {
         isMobile(){
-            if(screen.width <= 766) {
+            if(screen.width <= 1024) {
 				return true;
 			}else {
 				return false;

@@ -13,6 +13,10 @@ body {
 	width: 100%;
 }
 
+#app {
+	overflow-x: hidden;
+}
+
 ul,
 li {
 	list-style-type: none;
@@ -20,7 +24,37 @@ li {
 
 a {
 	text-decoration: none;
-    cursor: pointer;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p,
+a {
+	font-size: 14px;
+}
+
+.a-red {
+	color: #f62b0a !important;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .container {
@@ -34,15 +68,15 @@ a {
 	display: table;
 }
 
-.active {
-	color: #f62b0a;
-}
-
 .btn-red {
 	padding: 19px 30px 21px;
 	font-size: 14px;
 	color: #fff;
 	background: #f72b0c;
+}
+
+.btn-red:hover {
+	color: #fff;
 }
 
 
@@ -77,15 +111,26 @@ header .container-menu .menu-right .box-link ul {
 }
 
 header .container-menu .menu-right .box-link ul li a {
-	margin-left: 15px;
+	margin-left: 30px;
 	color: #868686;
 	text-transform: uppercase;
 	font-size: 11px;
 	letter-spacing: 2px;
-	font-weight: 500;
+	font-weight: 800;
+	position: relative;
 }
 
-header .container-menu .menu-right .box-link ul li a:last-child {
+.active:after {
+	content: '';
+	width: 100%;
+	border-bottom: 3px solid #f62b0a;
+	position: absolute;
+	left: 0;
+	top: 150%;
+	z-index: 1;
+}
+
+header .container-menu .menu-right .box-link ul:last-child {
 	padding-right: 20px;
 }
 
@@ -224,7 +269,7 @@ main #question .container .main-box .box-right .box-link a {
 	font-style: italic;
 	font-size: 14px;
 	letter-spacing: 1px;
-	color: #bf351f;
+	color: #f62b0a;
 	text-decoration: none;
 }
 
@@ -367,6 +412,12 @@ main #counter .container .box-counter .box-input .current-input {
 	margin-right: 10px;
 	font-size: 13px;
 	max-width: 96%;
+	border: none;
+}
+
+main #counter .container .box-counter .box-input .current-input::placeholder {
+	color: #c6c1bd;
+	opacity: 0.80;
 }
 
 main #counter .container .box-counter .box-input .btn-red {
@@ -457,7 +508,7 @@ main #speakers .col-lg-3 .box-bottom .icon {
 	background: #f62b0a;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
 	display: none;
@@ -474,6 +525,10 @@ main #speakers .col-lg-3 .box-bottom .box-img:hover .icon {
 main #speakers .col-lg-3 .box-bottom .icon i {
 	color: #ffffff;
 	font-size: 20px;
+}
+
+main #speakers .col-lg-3 .box-bottom .icon i:nth-child(2) {
+	margin: 0 20px;
 }
 
 main #speakers .col-lg-3 .box-bottom .box-title h3 {
@@ -639,7 +694,7 @@ main #location {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    padding: 60px;
+	padding: 60px;
 }
 
 main #location .col-lg-12 {
@@ -671,262 +726,274 @@ main #location .box-text p {
 }
 
 main #location .box-text p:before {
-    content: '\f124';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 10px;
+	content: '\f124';
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 10px;
 }
 
-main #location .box-link a{
-    color: #bf351f;
-    text-decoration: none;
-    font-size: 14px;
+main #location .box-link a {
+	color: #bf351f;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 main #location .box-link {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 main #location .box-bottom .box-img img {
-    width: 70%;
+	width: 70%;
 }
 
-main #location .box-bottom .box-link a{
-    margin-right: 15px;
-    color: #ffffff;
-    font-weight: 300;
+main #location .box-bottom .box-link a {
+	margin-right: 15px;
+	color: #ffffff;
+	font-weight: 300;
 }
 
-main #location .box-bottom .box-link a:first-child:before{
-    content: '\f879';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 12px;
+main #location .box-bottom .box-link a:first-child:before {
+	content: '\f879';
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 12px;
 }
 
-main #location .box-bottom .box-link a:last-child:before{
-    content: '\f0e0';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 12px;
+main #location .box-bottom .box-link a:last-child:before {
+	content: '\f0e0';
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 12px;
 }
+
+
 /* fine locatione */
+
+
 /* news */
 
 main #news {
-    padding: 50px;
+	padding: 50px;
 }
 
 main #news .col-lg-12 .box-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
-main #news .col-lg-12 .box-top .box-title h2{
-    font-size: 26px;
+main #news .col-lg-12 .box-top .box-title h2 {
+	font-size: 26px;
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 1;
 	letter-spacing: 4px;
 }
 
-main #news .col-lg-12 .box-top .box-link a{
-    color: #f62b0a;
-    text-transform: capitalize;
-    font-style: italic;
-    font-size: 14px;
+main #news .col-lg-12 .box-top .box-link a {
+	color: #f62b0a;
+	text-transform: capitalize;
+	font-style: italic;
+	font-size: 14px;
 }
 
 main #news .col-lg-4 .box-card .box-img {
-    position: relative;
+	position: relative;
 }
 
-main #news .col-lg-4 .box-card .box-img img{
-    width: 100%;
+main #news .col-lg-4 .box-card .box-img img {
+	width: 100%;
 }
 
-main #news .col-lg-4 .box-card .box-img .stiky{
-    background: #040404;
-    color: #ffffff;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+main #news .col-lg-4 .box-card .box-img .stiky {
+	background: #040404;
+	color: #ffffff;
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
-main #news .col-lg-4 .box-card .box-img .stiky p{
-    margin: 0 auto;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+main #news .col-lg-4 .box-card .box-img .stiky p {
+	margin: 0 auto;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
-main #news .col-lg-4 .box-card .box-img .stiky p:before{
-    content: '\f0a1';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 12px;
+main #news .col-lg-4 .box-card .box-img .stiky p:before {
+	content: '\f0a1';
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 12px;
 }
 
 main #news .col-lg-4 .box-card .box-text .data {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
-main #news .col-lg-4 .box-card .box-text .data p{
-    margin: 0 auto;
-    color: #c6c1bd;
-    font-size: 14px;
-    font-style: italic;
+main #news .col-lg-4 .box-card .box-text .data p {
+	margin: 0 auto;
+	color: #c6c1bd;
+	font-size: 14px;
+	font-style: italic;
 }
 
-main #news .col-lg-4 .box-card .box-text .title h4{
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin-top: 5px;
+main #news .col-lg-4 .box-card .box-text .title h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin-top: 5px;
 }
 
-main #news .col-lg-4 .box-card .box-text .body p{
-    font-size: 12px;
-    color: #c6c1bd;
-    margin: 20px auto;
+main #news .col-lg-4 .box-card .box-text .body p {
+	font-size: 12px;
+	color: #c6c1bd;
+	margin: 20px auto;
 }
 
-main #news .col-lg-4 .box-card .box-text .link a{
-    font-size: 12px;
-    color: #f62b0a;
-    text-transform: capitalize;
-    font-style: italic;
-    cursor: pointer;
+main #news .col-lg-4 .box-card .box-text .link a {
+	font-size: 12px;
+	color: #f62b0a;
+	text-transform: capitalize;
+	font-style: italic;
+	cursor: pointer;
 }
+
+
 /* fine news */
+
+
 /* tickets */
 
 main #tickets {
-    padding-top: 100px;
-    padding-bottom: 60px;
-    background: url("../img/ticket-bg.jpg");
+	padding-top: 100px;
+	padding-bottom: 60px;
+	background: url("../img/ticket-bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    color: white;
+	color: white;
 }
 
 main #tickets .col-lg-12 .box-title {
-    margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 main #tickets .col-lg-12 .box-title h2 {
-    font-size: 36px;
-    margin-bottom: 0;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 4px;
-    color: #ffffff;
-    text-align: center;
+	font-size: 36px;
+	margin-bottom: 0;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 4px;
+	color: #ffffff;
+	text-align: center;
 }
 
 main #tickets .col-lg-4 .box-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
 }
 
 main #tickets .col-lg-4 .box-card .header {
-    padding: 25px;
-    background: #e9e9e9;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+	padding: 25px;
+	background: #e9e9e9;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 main #tickets .col-lg-4 .box-card .header .feautured {
-    padding: 5px;
-    background: #f62b0a;
-    position: absolute;
-    top: 71px;
-    right: -20px;
-    text-align: center;
-    width: 130px;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform-origin: 100% 0%;
-    -ms-transform-origin: 100% 0%;
-    -webkit-transform-origin: 100% 0%;
+	padding: 5px;
+	background: #f62b0a;
+	position: absolute;
+	top: 71px;
+	right: -20px;
+	text-align: center;
+	width: 130px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%;
 }
 
 main #tickets .col-lg-4 .box-card .header .feautured p {
-    color: #ffffff;
-    font-size: 12px;
-    text-transform: capitalize;
-    font-weight: 500;
+	color: #ffffff;
+	font-size: 12px;
+	text-transform: capitalize;
+	font-weight: 500;
 }
 
 main #tickets .col-lg-4 .box-card .header h4 {
-    color: #272727;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 19px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    margin: 0 auto;
+	color: #272727;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 19px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	margin: 0 auto;
 }
 
 main #tickets .col-lg-4 .box-card .header p {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 auto;
-    color: #f62b0a;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 auto;
+	color: #f62b0a;
 }
 
 main #tickets .col-lg-4 .box-card .body {
-    padding: 25px;
-    background: #f9f9f9;
-    width: 100%;
+	padding: 25px;
+	background: #f9f9f9;
+	width: 100%;
 }
 
 main #tickets .col-lg-4 .box-card .body ul li {
-    margin-bottom: 13px;
-    font-size: 15px;
-    font-style: italic;
-    color: #8b8b8b;
+	margin-bottom: 13px;
+	font-size: 15px;
+	font-style: italic;
+	color: #8b8b8b;
 }
 
 main #tickets .col-lg-4 .box-card .body ul li:first-child {
-    margin-top: 13px;
+	margin-top: 13px;
 }
 
 main #tickets .col-lg-4 .box-card .footer {
-    padding: 15px;
-    background: #f62b0a;
-    width: 100%;
+	padding: 15px;
+	background: #f62b0a;
+	width: 100%;
 }
 
 main #tickets .col-lg-4 .box-card .footer a {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
 }
 
 main #tickets .col-lg-4 .box-card .footer a:hover {
-    color: #ffffff;
-    text-decoration: none;
+	color: #ffffff;
+	text-decoration: none;
 }
+
+
 /* fine tickets */
+
+
 /* presentation e twitter */
 
 main #presentation {
@@ -935,9 +1002,9 @@ main #presentation {
 
 main #presentation .box-presentation .box-title h2 {
 	font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
 	margin-bottom: 40px;
 }
 
@@ -949,16 +1016,16 @@ main #presentation .box-presentation .box-video {
 
 main #presentation .box-presentation .box-video .box-play {
 	position: absolute;
-    left: 20px;
-    top: 80%;
+	left: 20px;
+	top: 80%;
 }
 
 main #presentation .box-presentation .box-video .box-play i {
 	color: white;
-    background: black;
-    padding: 13px 28px;
-    border-radius: 5px;
-    opacity: 0.80;
+	background: black;
+	padding: 13px 28px;
+	border-radius: 5px;
+	opacity: 0.80;
 	cursor: pointer;
 }
 
@@ -968,9 +1035,9 @@ main #presentation .box-presentation .box-video .bgvid {
 
 main #presentation .box-twetter .box-title h2 {
 	font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
 	margin-bottom: 40px;
 }
 
@@ -984,7 +1051,7 @@ main #presentation .box-twetter .box-text {
 
 main #presentation .box-twetter .box-text p {
 	font-size: 14px;
-    color: #c6c1bd;
+	color: #c6c1bd;
 }
 
 main #presentation .box-twetter .box-text a {
@@ -1008,11 +1075,15 @@ main #presentation .box-twetter .box-date {
 }
 
 main #presentation .box-twetter .box-date p {
-    font-size: 12px;
-    font-style: italic;
+	font-size: 12px;
+	font-style: italic;
 	color: #b1b1b1;
 }
+
+
 /* fine presentation e twitter */
+
+
 /* sponsor */
 
 main #sponsor {
@@ -1027,15 +1098,15 @@ main #sponsor .box-text {
 
 main #sponsor h2 {
 	font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
 	margin-bottom: 40px;
 }
 
 main #sponsor p {
 	font-size: 14px;
-    color: #c6c1bd;
+	color: #c6c1bd;
 	margin-bottom: 50px;
 }
 
@@ -1045,11 +1116,16 @@ main #sponsor .box-img-main {
 	align-items: center;
 }
 
-main #sponsor .box-img-main img{
+main #sponsor .box-img-main img {
 	width: 100%;
 }
+
+
 /* fine sponsor */
+
+
 /************ fine main */
+
 
 /* footer */
 
@@ -1067,10 +1143,10 @@ footer .container:first-child {
 
 footer .container:first-child .box-title h4 {
 	font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 25px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
 	color: #ddd;
 }
 
@@ -1105,7 +1181,7 @@ footer .container:first-child .col-lg-3:nth-child(3) .box-btn .btn {
 	padding: 10px 30px 10px;
 }
 
-footer .container:first-child .col-lg-3:last-child .box-img img{
+footer .container:first-child .col-lg-3:last-child .box-img img {
 	width: 50px;
 	margin: 3px 3px;
 }
@@ -1121,24 +1197,25 @@ footer .container-fluid {
 
 footer .container-fluid .box-bottom {
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+	justify-content: space-between;
+	align-items: center;
 	width: 80%;
 	margin: 0 auto;
 }
 
-footer .container-fluid .box-bottom p, ul{
+footer .container-fluid .box-bottom p,
+ul {
 	margin: 0 auto;
 	opacity: 0.70;
 }
 
-footer .container-fluid .box-bottom ul{
+footer .container-fluid .box-bottom ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-footer .container-fluid .box-bottom ul li a{
+footer .container-fluid .box-bottom ul li a {
 	margin-right: 10px;
 	color: #c6c1bd;
 	font-weight: 300;
@@ -1153,3 +1230,304 @@ footer .container-fluid .box-bottom ul li a:hover {
 	text-decoration: none;
 }
 
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	main #hero .container .box-hero .box-title p {
+		font-size: 22px;
+	}
+	main #hero .container .box-hero .box-title h1 {
+		font-size: 26px;
+	}
+	main #hero .container .box-hero .box-text p {
+		font-size: 10px;
+	}
+	main #counter .container .box-counter .box-hours {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 600px;
+	}
+	main #counter .container .box-counter .box-title h3 {
+		font-size: 20px;
+	}
+	main #counter .container .box-counter .box-input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	main #counter .container .box-counter .box-input .btn {
+		width: 200px;
+		margin-top: 20px;
+	}
+	main #counter .container .box-counter .box-input .current-input {
+		width: 300px;
+	}
+	main #speakers .col-lg-12 .box-top .box-icon {
+		display: none;
+	}
+	main #tickets .col-lg-4 .box-card {
+		width: 80%;
+		margin: 10px auto;
+	}
+	main #presentation {
+		padding: 0;
+		margin-top: 30px;
+	}
+	main #presentation .box-twetter .box-title h2 {
+		font-size: 24px;
+	}
+	main #sponsor h2 {
+		font-size: 24px;
+	}
+	main #sponsor .box-img-main {
+		flex-wrap: wrap;
+	}
+	main #sponsor .box-img-main img {
+		margin-bottom: 10px;
+	}
+	footer {
+		text-align: center;
+	}
+	footer .container {
+		width: 90%;
+	}
+	footer .main-box {
+		margin-bottom: 30px;
+	}
+	footer .container-fluid .box-bottom {
+		flex-direction: column;
+		width: 100%;
+	}
+	footer .box-left {
+		margin-bottom: 20px;
+	}
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 766px) {
+	main #hero .container .box-hero .box-title p {
+		font-size: 22px;
+	}
+	main #hero .container .box-hero .box-title h1 {
+		font-size: 26px;
+	}
+	main #hero .container .box-hero .box-text p {
+		font-size: 10px;
+	}
+	main #counter .container .box-counter .box-hours {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 600px;
+	}
+	main #counter .container .box-counter .box-title h3 {
+		font-size: 20px;
+	}
+	main #counter .container .box-counter .box-input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	main #counter .container .box-counter .box-input .btn {
+		width: 200px;
+		margin-top: 20px;
+	}
+	main #counter .container .box-counter .box-input .current-input {
+		width: 300px;
+	}
+	main #speakers .col-lg-12 .box-top .box-icon {
+		display: none;
+	}
+	main #tickets .col-lg-4 .box-card {
+		width: 80%;
+		margin: 10px auto;
+	}
+	main #presentation {
+		padding: 0;
+		margin-top: 30px;
+	}
+	main #presentation .box-twetter .box-title h2 {
+		font-size: 24px;
+	}
+	main #sponsor h2 {
+		font-size: 24px;
+	}
+	main #sponsor .box-img-main {
+		flex-wrap: wrap;
+	}
+	main #sponsor .box-img-main img {
+		margin-bottom: 10px;
+	}
+	footer {
+		text-align: center;
+	}
+	footer .container {
+		width: 90%;
+	}
+	footer .main-box {
+		margin-bottom: 30px;
+	}
+	footer .container-fluid .box-bottom {
+		flex-direction: column;
+		width: 100%;
+	}
+	footer .box-left {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	main #hero .container .box-hero .box-title p {
+		font-size: 22px;
+	}
+	main #hero .container .box-hero .box-title h1 {
+		font-size: 26px;
+	}
+	main #hero .container .box-hero .box-text p {
+		font-size: 10px;
+	}
+	main #counter .container .box-counter .box-hours {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 600px;
+	}
+	main #counter .container .box-counter .box-title h3 {
+		font-size: 20px;
+	}
+	main #counter .container .box-counter .box-input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	main #counter .container .box-counter .box-input .btn {
+		width: 200px;
+		margin-top: 20px;
+	}
+	main #counter .container .box-counter .box-input .current-input {
+		width: 300px;
+	}
+	main #speakers .col-lg-12 .box-top .box-icon {
+		display: none;
+	}
+	main #tickets .col-lg-4 .box-card {
+		width: 80%;
+		margin: 10px auto;
+	}
+	main #presentation {
+		padding: 0;
+		margin-top: 30px;
+	}
+	main #presentation .box-twetter .box-title h2 {
+		font-size: 24px;
+	}
+	main #sponsor h2 {
+		font-size: 24px;
+	}
+	main #sponsor .box-img-main {
+		flex-wrap: wrap;
+	}
+	main #sponsor .box-img-main img {
+		margin-bottom: 10px;
+	}
+	footer {
+		text-align: center;
+	}
+	footer .container {
+		width: 90%;
+	}
+	footer .main-box {
+		margin-bottom: 30px;
+	}
+	footer .container-fluid .box-bottom {
+		flex-direction: column;
+		width: 100%;
+	}
+	footer .box-left {
+		margin-bottom: 20px;
+	}
+}
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	main #hero .container .box-hero .box-title p {
+		font-size: 22px;
+	}
+	main #hero .container .box-hero .box-title h1 {
+		font-size: 26px;
+	}
+	main #hero .container .box-hero .box-text p {
+		font-size: 10px;
+	}
+	main #counter .container .box-counter .box-hours {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 600px;
+	}
+	main #counter .container .box-counter .box-title h3 {
+		font-size: 20px;
+	}
+	main #counter .container .box-counter .box-input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	main #counter .container .box-counter .box-input .btn {
+		width: 200px;
+		margin-top: 20px;
+	}
+	main #counter .container .box-counter .box-input .current-input {
+		width: 300px;
+	}
+	main #speakers .col-lg-12 .box-top .box-icon {
+		display: none;
+	}
+	main #tickets .col-lg-4 .box-card {
+		width: 80%;
+		margin: 10px auto;
+	}
+	main #presentation {
+		padding: 0;
+		margin-top: 30px;
+	}
+	main #presentation .box-twetter .box-title h2 {
+		font-size: 24px;
+	}
+	main #sponsor h2 {
+		font-size: 24px;
+	}
+	main #sponsor .box-img-main {
+		flex-wrap: wrap;
+	}
+	main #sponsor .box-img-main img {
+		margin-bottom: 10px;
+	}
+	footer {
+		text-align: center;
+	}
+	footer .container {
+		width: 90%;
+	}
+	footer .main-box {
+		margin-bottom: 30px;
+	}
+	footer .container-fluid .box-bottom {
+		flex-direction: column;
+		width: 100%;
+	}
+	footer .box-left {
+		margin-bottom: 20px;
+	}
+}
