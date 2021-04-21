@@ -1,3 +1,3 @@
-<h1>Puoi vedere il progetto qui</h1>
+<h1>Puoi vedere il progetto qui:</h1>
 
 https://carmine19.github.io/proj-html-vuejs/
